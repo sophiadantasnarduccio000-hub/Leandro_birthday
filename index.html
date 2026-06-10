@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Feliz Aniversário Leandro! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fundo animado -->
+    <div class="background-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Confete -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <!-- Container Principal -->
+    <div class="container">
+        <!-- Seção de Boas-vindas -->
+        <section class="welcome-section">
+            <h1 class="main-title">
+                <span class="letter">F</span>
+                <span class="letter">e</span>
+                <span class="letter">l</span>
+                <span class="letter">i</span>
+                <span class="letter">z</span>
+                <span class="letter"> </span>
+                <span class="letter">A</span>
+                <span class="letter">n</span>
+                <span class="letter">i</span>
+                <span class="letter">v</span>
+                <span class="letter">e</span>
+                <span class="letter">r</span>
+                <span class="letter">s</span>
+                <span class="letter">á</span>
+                <span class="letter">r</span>
+                <span class="letter">i</span>
+                <span class="letter">o</span>
+            </h1>
+            <p class="subtitle">Leandro, você merece um dia especial! 🎂💕</p>
+            
+            <!-- Contagem Regressiva -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Dias</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Horas</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutos</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Mensagens -->
+        <section class="messages-section">
+            <div class="message-box fade-in-up">
+                <h2>💖 Uma Mensagem Para Você 💖</h2>
+                <p>Leandro, neste dia especial queremos celebrar tudo que você é: sua alegria, sua força e seu coração generoso. Que este ano seja repleto de momentos incríveis, risadas sinceras e muita felicidade!</p>
+            </div>
+
+            <div class="message-box fade-in-up" style="animation-delay: 0.3s;">
+                <h2>✨ Você Merece O Melhor ✨</h2>
+                <p>Obrigado por ser essa pessoa incrível que traz luz para a vida de quem está ao seu lado. Que cada momento deste dia seja tão especial quanto você!</p>
+            </div>
+
+            <div class="message-box fade-in-up" style="animation-delay: 0.6s;">
+                <h2>🎵 Que Sua Música Toque Corações 🎵</h2>
+                <p>Como as músicas de Ana Vitória tocam nossas almas, que sua vida seja uma melodia linda de alegria, amor e realizações. Feliz Aniversário! 🎶</p>
+            </div>
+        </section>
+
+        <!-- Seção de Galeria de Imagens -->
+        <section class="gallery-section">
+            <h2 class="gallery-title">📸 Nossos Momentos Especiais 📸</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="assets/images/foto1.jpg" alt="Momento especial 1">
+                    <div class="gallery-overlay">Momentos para Lembrar</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto2.jpg" alt="Momento especial 2">
+                    <div class="gallery-overlay">Sorrisos Sinceros</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto3.jpg" alt="Momento especial 3">
+                    <div class="gallery-overlay">Felicidade Pura</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto4.jpg" alt="Momento especial 4">
+                    <div class="gallery-overlay">Boas Lembranças</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto5.jpg" alt="Momento especial 5">
+                    <div class="gallery-overlay">Amor e Carinho</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/foto6.jpg" alt="Momento especial 6">
+                    <div class="gallery-overlay">Instantes Mágicos</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Música -->
+        <section class="music-section">
+            <h2>🎵 Sua Playlist Especial 🎵</h2>
+            <div class="music-player">
+                <div class="player-info">
+                    <p>Música: Ana Vitória</p>
+                    <p>Para: Leandro</p>
+                </div>
+                <audio id="audioPlayer" controls>
+                    <source src="assets/audio/ana_vitoria.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </div>
+        </section>
+
+        <!-- Seção Final -->
+        <section class="final-section">
+            <div class="heart-animation">💕</div>
+            <h2>Que Este Dia Seja Inesquecível! 🎉</h2>
+            <p>Feliz Aniversário, Leandro!</p>
+            <button class="confetti-button" onclick="createConfetti()">🎊 Explodir Confete! 🎊</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
